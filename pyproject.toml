@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baronirach-samplerate"
+version = "0.1.0"
+description = "按流量与采样率估算被采到的比例与稀有错误的漏采风险"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "baronirach" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://baronirach.github.io"
+Repository = "https://github.com/baronirach/samplerate"
+Issues = "https://github.com/baronirach/samplerate/issues"
+
+[project.scripts]
+samplerate = "samplerate:main"
+
+[tool.setuptools]
+py-modules = ["samplerate"]
